@@ -4,7 +4,10 @@
   "description": "Lightweight math calculation library",
   "main": "src/clc.js",
   "scripts": {
-    "test": "tst"
+    "test": "mocha test/clc.test.js -w",
+    "cover": "istanbul cover -x *.test.js _mocha -- -R spec test/clc.test.js",
+    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "report-coverage": "cat ./covarage/lcov.info | codecov"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,16 @@
   "bugs": {
     "url": "https://github.com/alperentalaslioglu/clc.js/issues"
   },
-  "homepage": "https://github.com/alperentalaslioglu/clc.js#readme"
+  "homepage": "https://github.com/alperentalaslioglu/clc.js#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "codecov.io": "0.1.6",
+    "istanbul": "0.4.3",
+    "mocha": "2.5.3"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run cover && npm run check-coverage"
+    }
+  }
 }
