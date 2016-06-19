@@ -1,6 +1,6 @@
 {
   "name": "clc-js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Lightweight math calculation library",
   "main": "src/clc.js",
   "scripts": {
