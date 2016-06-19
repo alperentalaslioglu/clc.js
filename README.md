@@ -17,7 +17,7 @@ For more math formulas and computations, please open issues.
 # Usage
 
 ```sh
-npm install calc.js
+npm install clc-js
 ```
 
 ```js
@@ -41,6 +41,23 @@ clc.calcPythagorean(3,4) // returns 5
 // Calculation of simplified interest rate
 clc.calcSimplifiedInterest(5000,0.05,12); // returns 8979.281630110647
 
+// Calculation of compound interest rate
+clc.calcCompoundInterest(5000,0.05,2,12)  // return 9043.629747912944
+
+// Calculation of decimal to binary
+clc.calcDecimal2Binary(24)  // return '11000'
+
+// Calculation of decimal to hexadecimal
+clc.calcDecimal2Hex(14) // return 'E'
+
+// Calculation of logarithm
+clc.calcLog(8,2) // return 3
+
+// Calculation of logarithm by base e
+clc.calcLn(5) // return 1.6094379124341003
+
+// Calculation of area of square
+clc.calcAreaOfSquare(4) // return 16
 
 ```
 
