@@ -1,0 +1,25 @@
+{
+  "name": "clc-js",
+  "version": "2.0.0",
+  "description": "Lightweight math calculation library",
+  "main": "src/clc.js",
+  "scripts": {
+    "test": "tst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alperentalaslioglu/clc.js.git"
+  },
+  "keywords": [
+    "calculation",
+    "compute",
+    "math",
+    "calc"
+  ],
+  "author": "Alperen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alperentalaslioglu/clc.js/issues"
+  },
+  "homepage": "https://github.com/alperentalaslioglu/clc.js#readme"
+}
