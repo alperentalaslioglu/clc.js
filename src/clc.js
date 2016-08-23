@@ -1,4 +1,4 @@
-var  clc = {
+var clc = {
 
     /*
      * Calculation of distance between two points (x1,y1) <----> (x2,y2)
@@ -6,7 +6,7 @@ var  clc = {
      * @param x2 and y2 : Coordinates of second point
      * @return distance between two points
      */
-    calcDistBetween : function(x1, y1, x2, y2) {
+    calcDistBetween: function (x1, y1, x2, y2) {
         return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
     },
 
@@ -109,7 +109,7 @@ var  clc = {
      * @param base : Base of logarithm
      * @return logarithm value
      */
-    calcLog: function (value,base) {
+    calcLog: function (value, base) {
         return Math.log(value) / Math.log(base);
     },
 
@@ -128,9 +128,21 @@ var  clc = {
      * @return area of square
      */
     calcAreaOfSquare: function (side) {
-        return Math.pow(side,2);
-    }
+        return Math.pow(side, 2);
+    },
 
+    /*
+     * Calculation of factorial value of a number
+     * @param n : Value of number
+     * @return factorial result
+     */
+    calcFactorial: function (n) {
+        var result = 1;
+        for(var i = n; i > 0; i--){
+            result *= i;
+        }
+        return result;
+    }
 };
 
 module.exports = clc;
