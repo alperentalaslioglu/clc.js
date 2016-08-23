@@ -60,7 +60,7 @@ clc.calcLn(5) // returns -> 1.6094379124341003
 clc.calcAreaOfSquare(4) // returns -> 16
 
 // Calculation of factorial of a number
-clc.calcFactorial(5) && returns -> 120
+clc.calcFactorial(5) // returns -> 120
 
 ```
 
