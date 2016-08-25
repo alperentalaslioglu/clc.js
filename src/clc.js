@@ -138,11 +138,32 @@ var clc = {
      */
     calcFactorial: function (n) {
         var result = 1;
-        for(var i = n; i > 0; i--){
+        for (var i = n; i > 0; i--) {
             result *= i;
         }
         return result;
+    },
+
+    /*
+     * Calculation of permutation of a number
+     * @param n : Value of number
+     * @param r : Permuation number
+     * @return permutation result
+     */
+    calcPermutation: function (n, r) {
+        return this.calcFactorial(n) / this.calcFactorial(n - r);
+    },
+
+    /*
+     * Calculation of combination of a number
+     * @param n : Value of number
+     * @param r : Combination number
+     * @return combination result
+     */
+    calcCombination: function (n, r) {
+        return this.calcFactorial(n) / (this.calcFactorial(n - r) * this.calcFactorial(r));
     }
+
 };
 
 module.exports = clc;

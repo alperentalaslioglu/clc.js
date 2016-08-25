@@ -62,6 +62,13 @@ clc.calcAreaOfSquare(4) // returns -> 16
 // Calculation of factorial of a number
 clc.calcFactorial(5) // returns -> 120
 
+// Calculation of Permutation
+clc.calcPermutation(5,2) // returns -> 20
+
+// Calculation of Combination
+clc.calcCombination(5,2) // returns -> 10
+
+
 ```
 
 # License
